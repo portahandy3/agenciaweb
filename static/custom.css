@@ -1,0 +1,274 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* ===== SECCIÓN POR QUÉ ELEGIRNOS ===== */
+.por-que-elegirnos {
+  background-color: #7300b0;
+  color: white;
+  padding: 80px 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Título principal dentro de la sección */
+.por-que-elegirnos h2.fw-bold {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.por-que-elegirnos h2.fw-bold:hover {
+  transform: scale(1.05);
+}
+
+/* Texto de párrafos dentro de la sección */
+.por-que-elegirnos p.text-white {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* Estilo para los íconos circulares */
+.por-que-elegirnos .me-3 span {
+  width: 50px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  font-size: 1.5rem;
+  background-color: white !important;
+  color: #6a0dad !important;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Contenedores flexibles para cada línea (d-flex) */
+.por-que-elegirnos .d-flex {
+  align-items: center;
+  margin-bottom: 1.25rem; /* espacio entre filas */
+}
+
+/* Separador decorativo (si lo usas en alguna parte) */
+.separador {
+  height: 4px;
+  width: 60px;
+  background: linear-gradient(to right, #f78cdd, #8888ff);
+  border-radius: 5px;
+  margin: 10px 0 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .por-que-elegirnos h2.fw-bold {
+    font-size: 1.75rem;
+  }
+
+  .por-que-elegirnos p.text-white {
+    font-size: 1rem;
+  }
+}
+
+/* ===== FORMULARIOS Y CONTROLES ===== */
+input.form-control,
+textarea.form-control {
+  border-radius: 10px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #8888ff;
+  box-shadow: 0 0 0 0.2rem rgba(136, 136, 255, 0.25);
+  outline: none;
+}
+
+/* ===== BOTÓN FLOTANTE DE WHATSAPP ===== */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+}
+
+/* ===== OTROS ESTILOS GENERALES ===== */
+
+/* Texto general en secciones oscuras */
+.seccion-dark {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.seccion-dark p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Imágenes con sombra y borde redondeado */
+.seccion-dark img {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clase para escalado hover en imágenes o elementos */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Marca o logo con efecto hover */
+.brand-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  color: #2d2d2d;
+  transition: transform 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.brand-hover:hover .brand-text {
+  transform: scale(1.07);
+  color: #6f42c1;
+}
+
+.brand-hover:active .brand-text {
+  transform: scale(1.12);
+  color: #a347ff;
+}
+
+
+/* Título */
+.col-md-6 > h2.fw-bold {
+  font-size: 2.2rem;      /* Tamaño más moderado */
+  font-weight: 700;       /* Negrita suficiente */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+/* Texto de los párrafos */
+.col-md-6 p.text-white {
+  font-size: 1.1rem;      /* Más pequeño que antes pero legible */
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+/* Íconos circulares */
+.col-md-6 .me-3 span {
+  width: 40px !important;   /* Íconos un poco más pequeños */
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 1.3rem;        /* Emojis más discretos */
+}
+
+
+
+
+.instagram-float {
+  position: fixed;
+  bottom: 100px;  /* más arriba que WhatsApp */
+  right: 20px;
+  z-index: 9999;
+}
+
+.instagram-float img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.instagram-float img:hover {
+  transform: scale(1.1);
+}
+
+
+.fa-3x {
+  transition: transform 0.3s ease;
+}
+.fa-3x:hover {
+  transform: scale(1.2);
+  color: #00ffd0 !important;
+}
+
+
+.icon-proyectos { color: #ffffff; }
+.icon-sitios { color: #00d4ff; }
+.icon-exitosos { color: #6aff00; }
+
+
+
+.accordion-button {
+  background-color: #6a4df2; /* Color de fondo atractivo */
+  color: white;
+  font-size: 1.2rem; /* Aumentamos el tamaño de la fuente */
+  font-weight: 600; /* Fuente más gruesa */
+  padding: 1.2rem; /* Más espacio para que se vea más grande */
+  border: 1px solid #ddd; /* Bordes sutiles para los botones */
+  transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.accordion-button:hover {
+  background-color: #5a3ec7; /* Cambio de color en hover */
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Quitamos la sombra de foco */
+}
+
+.accordion-body {
+  background-color: #f9f9f9; /* Fondo claro */
+  font-size: 1.1rem; /* Tamaño de fuente más grande */
+  padding: 2rem; /* Espacio extra alrededor del texto */
+}
+
+.accordion-item {
+  margin-bottom: 1.5rem; /* Espacio entre cada ítem */
+  border-radius: 10px; /* Bordes redondeados para un look más moderno */
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.accordion-button.collapsed {
+  background-color: #3a2d9f; /* Color para botones colapsados */
+}
+
+.accordion-button span {
+  font-weight: bold; /* Resalta las preguntas */
+}
+
+
+.por-que-elegirnos i {
+  transition: transform 0.3s ease;
+}
+.por-que-elegirnos i:hover {
+  transform: scale(1.3);
+}

@@ -1,0 +1,38 @@
+{% include 'cabecera.html' %}
+
+<div class="container my-5">
+  <h2 class="text-center text-primary mb-4">Hablemos 😊</h2>
+  <p class="text-center">Contactarnos es tan fácil como escribir tu nombre.</p>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form method="POST" action="/enviar">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre y Apellido *</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="mb-3">
+          <label for="empresa" class="form-label">Empresa *</label>
+          <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Tu empresa o proyecto" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico *</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono *</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Contanos acerca de tu proyecto y necesidades *</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-5">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% include 'pie.html' %}
